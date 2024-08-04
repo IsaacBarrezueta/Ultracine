@@ -9,15 +9,20 @@
 <body>
     <header>
         <div class="logo">
-            <img src="https://www.supercines.com/assets/img/home/supercinesLogo.png" alt="">
+            <a href="/index.html">
+                <img src="https://www.supercines.com/assets/img/home/supercinesLogo.png" alt=""></a>
         </div>
         <div class="location-selector">
             <select name="city" id="city">
                 <option value="machala">Machala</option>
+                <option value="guayaquil">Guayaquil</option>
+                <option value="quito">Quito</option>
                 <!-- Más opciones de ciudades -->
             </select>
             <select name="cinema" id="cinema">
                 <option value="machala">Machala</option>
+                <option value="san_marino">San Marino</option>
+                <option value="mall_del_sol">Mall del Sol</option>
                 <!-- Más opciones de cines -->
             </select>
         </div>
@@ -49,11 +54,12 @@
                     <input type="checkbox" id="remember" name="remember">
                     <label for="remember">Recordarme</label>
                 </div>
-                <button type="submit">Iniciar Sesión</button>
-            </form>
+                <a href="/index.html">
+                    <button type="submit">Iniciar Sesión</button></a>
+                </form>
             <div class="login-footer">
                 <a href="#">¿Olvidaste tu contraseña?</a>
-                <a href="#">¿Aún no eres miembro? Regístrate aquí</a>
+                <a href="/User_registro/registro.html">¿Aún no eres miembro? Regístrate aquí</a>
             </div>
         </div>
     </header>
@@ -84,44 +90,6 @@
     </main>
     
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Cartelera</h3>
-                <ul>
-                    <li><a href="#">Próximos Estrenos</a></li>
-                    <li><a href="#">Cartelera</a></li>
-                    <li><a href="#">Dónde Estamos</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Supercines</h3>
-                <ul>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Políticas de Privacidad</a></li>
-                    <li><a href="#">Políticas de Cookies</a></li>
-                    <li><a href="#">Cumplimiento</a></li>
-                    <li><a href="#">Servicios Publicitarios</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contáctenos</h3>
-                <ul>
-                    <li><a href="#">Escríbenos</a></li>
-                    <li><a href="#">Trabaja con Nosotros</a></li>
-                    <li><a href="#">Facturación Electrónica</a></li>
-                </ul>
-            </div>
-            <div class="footer-section contact-info">
-                <p>Call Center</p>
-                <p>1-800-626262</p>
-                <p>Horario: 10h00 - 21h00</p>
-            </div>
-            <div class="footer-section social-media">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            </div>
-        </div>
         <p>&copy; 2024 Supercines. Todos los derechos reservados.</p>
     </footer>
     <script src="script.js"></script>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Supercines</title>
+    <link rel="stylesheet" href="/User_registro/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+            <img src="https://www.supercines.com/assets/img/home/supercinesLogo.png" alt=""></a>
+        </div>
+        <div class="user-info">
+            <button id="login-btn" class="login-btn">Iniciar Sesión <span class="user-icon">👤</span></button>
+            <span class="user-name">Bienvenid@, Carlos Barrezueta</span>
+            <div id="user-dropdown" class="dropdown">
+                <div class="dropdown-content">
+                    <a href="#">Mi cuenta</a>
+                    <a href="#">Mis compras</a>
+                    <a href="#">Tarjeta de Afiliación Mi Comisariato</a>
+                    <a href="#">Actualizar datos</a>
+                    <a href="#">Cambiar contraseña</a>
+                    <a href="#" id="logout-btn">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+        <div id="login-form" class="login-form">
+            <div class="login-header">
+                <h2>Iniciar Sesión</h2>
+                <span id="close-btn" class="close-btn">Cerrar</span>
+            </div>
+            <form>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordarme</label>
+                </div>
+                <a href="/index.html">
+                <button type="submit">Iniciar Sesión</button></a>
+            </form>
+            <div class="login-footer">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <a href="/User_registro/registro.html">¿Aún no eres miembro? Regístrate aquí</a>
+            </div>
+        </div>
+    </header>
+    <div class="registration-container">
+        <h1>Registro de usuario</h1>
+        <form class="registration-form">
+            <div class="form-section">
+                <h2>Datos Personales</h2>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmar">Confirmar</label>
+                    <input type="password" id="confirmar" name="confirmar" required>
+                </div>
+                <div class="form-group">
+                    <label for="cedula">Cédula</label>
+                    <input type="text" id="cedula" name="cedula" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <select id="ciudad" name="ciudad" required>
+                        <option value="">Escoger ciudad</option>
+                        <!-- Agregar opciones de ciudades aquí -->
+                        <option value="1">Machala</option>
+                        <option value="2">Pasaje</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección domicilio</label>
+                    <textarea id="direccion" name="direccion" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="comunicaciones" name="comunicaciones">
+                    <label for="comunicaciones">Acepto el envío de comunicaciones comerciales...</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">He leído y acepto los términos y condiciones...</label>
+                </div>
+                <a href="/index.html">
+                <button type="submit" class="register-btn">Registrarme</button></a>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Supercines. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>

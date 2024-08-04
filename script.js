@@ -56,33 +56,48 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.error('Error fetching the content:', error));
     }
 
+    // Resaltar la pestaña activa
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const submenuLinks = document.querySelectorAll('.submenu ul li a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(navLink => navLink.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    submenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            submenuLinks.forEach(submenuLink => submenuLink.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
     // Cargar la cartelera por defecto al cargar la página
     loadContent("cartelera.html");
-});
 
-
-
-
-//----------------- Lista desplegable --------------------------------//
-document.getElementById('citySelect').addEventListener('click', function() {
-    document.getElementById('cityOptions').classList.toggle('show');
-});
-
-document.querySelectorAll('.select-items div').forEach(function(option) {
-    option.addEventListener('click', function() {
-        document.getElementById('citySelect').innerText = this.innerText;
-        document.getElementById('cityOptions').classList.remove('show');
+    // Lista desplegable
+    document.getElementById('citySelect').addEventListener('click', function() {
+        document.getElementById('cityOptions').classList.toggle('show');
     });
-});
 
-window.onclick = function(event) {
-    if (!event.target.matches('.custom-select')) {
-        var dropdowns = document.getElementsByClassName("select-items");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+    document.querySelectorAll('.select-items div').forEach(function(option) {
+        option.addEventListener('click', function() {
+            document.getElementById('citySelect').innerText = this.innerText;
+            document.getElementById('cityOptions').classList.remove('show');
+        });
+    });
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.custom-select')) {
+            var dropdowns = document.getElementsByClassName("select-items");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
             }
         }
     }
-}
+});
