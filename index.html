@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.supercines.com/assets/img/home/supercinesLogo.png" alt="">
+        </div>
+        <div class="location-selector">
+            <select name="city" id="city">
+                <option value="machala">Machala</option>
+                <!-- Más opciones de ciudades -->
+            </select>
+            <select name="cinema" id="cinema">
+                <option value="machala">Machala</option>
+                <!-- Más opciones de cines -->
+            </select>
+        </div>
+        <div class="user-info">
+            <button id="login-btn" class="login-btn">Iniciar Sesión <span class="user-icon">👤</span></button>
+            <span class="user-name">Bienvenid@, Carlos Barrezueta</span>
+            <div id="user-dropdown" class="dropdown">
+                <div class="dropdown-content">
+                    <a href="#">Mi cuenta</a>
+                    <a href="#">Mis compras</a>
+                    <a href="#">Tarjeta de Afiliación Mi Comisariato</a>
+                    <a href="#">Actualizar datos</a>
+                    <a href="#">Cambiar contraseña</a>
+                    <a href="#" id="logout-btn">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+        <div id="login-form" class="login-form">
+            <div class="login-header">
+                <h2>Iniciar Sesión</h2>
+                <span id="close-btn" class="close-btn">Cerrar</span>
+            </div>
+            <form>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordarme</label>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <div class="login-footer">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <a href="#">¿Aún no eres miembro? Regístrate aquí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="promo">
+            <img src="https://www.supercines.com/PromotionalImages/harold-y-su-crayon-magico_1_2024-08-03_316420240803.jpg" alt="Harold y el Crayón Mágico">
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#" id="cartelera" class="nav-link">Cartelera</a></li>
+                <li><a href="#" id="estrenos" class="nav-link">Próximos estrenos</a></li>
+                <li><a href="#" id="bar" class="nav-link">Bar</a></li>
+            </ul>
+        </nav>
+        <section class="movies-section">
+            <div id="movies-content">
+                <!-- Contenido de películas dinámico -->
+            </div>
+            <div class="sidebar">
+                <button class="price-button">Precio de Entradas</button>
+                <img src="https://www.supercines.com/AnunciosTerceros/cumpleanos-3920240109.jpg" alt="Publicidad" class="advertisement">
+            </div>
+        </section>
+    
+        <section class="birthday-promo">
+            <img src="https://www.supercines.com/Promotions/celebra-tu-cumple-footer-1620221124.jpg" alt="Super Cumpleaños">
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cartelera</h3>
+                <ul>
+                    <li><a href="#">Próximos Estrenos</a></li>
+                    <li><a href="#">Cartelera</a></li>
+                    <li><a href="#">Dónde Estamos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Supercines</h3>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Políticas de Cookies</a></li>
+                    <li><a href="#">Cumplimiento</a></li>
+                    <li><a href="#">Servicios Publicitarios</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contáctenos</h3>
+                <ul>
+                    <li><a href="#">Escríbenos</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                    <li><a href="#">Facturación Electrónica</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <p>Call Center</p>
+                <p>1-800-626262</p>
+                <p>Horario: 10h00 - 21h00</p>
+            </div>
+            <div class="footer-section social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <p>&copy; 2024 Supercines. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
